@@ -72,6 +72,12 @@
                   <li>
                       <b>June 22</b><p>Finished up the line emission estimator and looked at what it produced.</p>
                   </li>
+                  <li>
+                      <b>June 23</b><p>Moved the line emission estimator into the cyton code. Wrote a unit test and tried to run it, encountered unrelated problem.</p>
+                  </li>
+                  <li>
+                      <b>June 24</b><p>Fixed problem with unit tests not running at all. My addition did however not work, seems to be a problem with initializing the storage: the code never takes the branch that would actually increment the sum.</p>
+                  </li>
                 </ul>
               </div>
             </li>
@@ -145,5 +151,10 @@
           </ul>
         </div>
       </main>
+
+<!--
+./setup.py test --test-path=tardis/montecarlo/tests
+-->
     </body>
   </html>
+
