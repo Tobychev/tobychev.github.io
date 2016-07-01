@@ -70,7 +70,10 @@
                       <b>June 28</b><p>Implemented fix to the unit test after @yeganer found the cause. Discussed with @wkerzendorf how to do the level absorption sum, and how atomic data is stored. The conclusion was that doing the sum in pandas can be done at the cost of a few hundred miliseconds.</p>
                   </li>
                   <li>
-                      <b>June 29</b><p>In progress</p>
+                      <b>June 29</b><p>Implemented code to calculate the attenuated source function using pandas.</p>
+                  </li>
+                  <li>
+                      <b>June 30</b><p>Wrote a unit test for the attenuated source function. Considered the details of the final impact parameter integral. The simplest interpretation is that the way the intensities are derived "flattens" the problem so that the integration simply amounts to summing up the intensities according to whitin which shell a given impact parameter lies. This of course does not have any interpretation in the case of p < R, so it's probably not correct. </p>
                   </li>
                 </ul>
               </div>
