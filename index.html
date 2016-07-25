@@ -63,11 +63,19 @@
               <div class="collapsible-body grey lighten-5">
                 <ul class="details">
                   <li>
-                      <b>July 17</b><p>Wrote documentation and made a diagram. Also fixed bug found by @yeganer, which significantly improved the end result. </p>
-                      <img src="http://i.imgur.com/fZaWUG4.png" alt="Spectra" rel="nofollow">
+                      <b>July 18</b><p>Worked on documentation, mainly making a diagram to show the integration geometry.</p>
                   </li>
                   <li>
-                      <b>July 18</b><p>Kept on documenting, reached a sort of <a href="https://github.com/tardis-sn/tardis/pull/621">end point</a>. Also ran test with just black body, one shell and no actual source function in the integral, this gave good enough agreement that its important to do all the details properly. That is put the integral into physical units and make sure the MC and integral methods are compared on the same frequency grid.</p>
+                      <b>July 19</b><p>Kept on documenting, reached a sort of <a href="https://github.com/tardis-sn/tardis/pull/621">end point</a>. Also ran test with just black body, one shell and no actual source function in the integral, this gave good enough agreement that its important to do all the details properly. That is put the integral into physical units and make sure the MC and integral methods are compared on the same frequency grid.</p>
+                  </li>
+                  <li>
+                      <b>July 20</b><p>Made comparisons between integrator and MC for one shell model of pure silicon. Shape agreement reasonable but normalization way off, factor of 10^18. <img src="http://i.imgur.com/OsM5Q29.png" alt="Spectra">. After poking around a bit I got out a pure black body spectrum, off by magnitudes.</p>
+                  </li>
+                  <li>
+                      <b>July 21</b><p>After fixing regresson from the  20:th, kept on trying to find the source of the missing magnitudes.</p>
+                  </li>
+                  <li>
+                      <b>July 22</b><p>Found the missing magnitudes, it was a missing dp. Still some magnitude missing, but turned out to be due to too few binns in impact parameter space</p>
                   </li>
                 </ul>
               </div>
@@ -91,6 +99,10 @@
                   </li>
                   <li>
                       <b>July 14</b><p>Finished up the integrator, in now does the complete impact parameter range. The results are still bad.</p> <img src="http://i.imgur.com/YYrMHjv.png" alt="Spectra" rel="nofollow"> Image shows spectra of the example produced by the integrator. Horisontal axis is frequency in Hertz. 
+                  </li>
+                  <li>
+                      <b>July 17</b><p>Wrote documentation and made a diagram. Also fixed bug found by @yeganer, which significantly improved the end result. </p>
+                      <img src="http://i.imgur.com/fZaWUG4.png" alt="Spectra" rel="nofollow">
                   </li>
                 </ul>
               </div>
